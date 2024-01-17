@@ -20,7 +20,7 @@ class BottomTest extends TestCase
 
     public function test_bottom_delete(): void
     {  $response = $this->post('/api/bottoms', ['name' => 'ló', 'description' => 'uguzfuz']);
-        $response = $this->delete('/api/bottoms/20');
+        $response = $this->delete('/api/bottoms/1');
         $response->assertStatus(200);
     }
 }

@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Bottom extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = 'bottom_id';
+
     protected $fillable = [
         'name',
         'description',
